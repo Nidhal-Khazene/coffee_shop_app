@@ -3,6 +3,7 @@ import 'package:coffee_shop_app/core/utils/assets.dart';
 import 'package:coffee_shop_app/core/utils/colors.dart';
 import 'package:coffee_shop_app/core/utils/styles.dart';
 import 'package:coffee_shop_app/core/widgets/custom_button.dart';
+import 'package:coffee_shop_app/features/home/presentation/views/home_view.dart';
 import 'package:flutter/material.dart';
 
 class OnBoardingViewBody extends StatelessWidget {
@@ -49,7 +50,12 @@ class OnBoardingViewBody extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 32),
-                CustomButton(content: 'Get Started'),
+                CustomButton(
+                  onTap: () {
+                    Navigator.pushNamed(context, HomeView.routeName);
+                  },
+                  content: 'Get Started',
+                ),
                 const SizedBox(height: 64),
               ],
             ),
