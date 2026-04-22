@@ -1,4 +1,6 @@
+import 'package:coffee_shop_app/core/routes/on_generate_routes.dart';
 import 'package:coffee_shop_app/core/utils/colors.dart';
+import 'package:coffee_shop_app/features/on_boarding/presentation/views/on_boarding_view.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -17,6 +19,8 @@ class CoffeeShop extends StatelessWidget {
         scaffoldBackgroundColor: ColorsData.kScaffoldBgColor,
         fontFamily: GoogleFonts.sora().fontFamily,
       ),
+      initialRoute: OnBoardingView.routeName,
+      onGenerateRoute: onGenerateRoutes,
     );
   }
 }
