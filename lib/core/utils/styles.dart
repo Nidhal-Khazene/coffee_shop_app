@@ -1,4 +1,4 @@
-import 'dart:ui';
+import 'package:flutter/material.dart';
 
 abstract class AppStyles {
   static final TextStyle regular14 = TextStyle(
