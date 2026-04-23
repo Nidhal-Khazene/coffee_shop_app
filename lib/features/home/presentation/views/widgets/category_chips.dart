@@ -25,7 +25,7 @@ class _CategoryChipsState extends State<CategoryChips> {
   @override
   Widget build(BuildContext context) {
     return AnimatedContainer(
-      duration: const Duration(milliseconds: 200),
+      duration: const Duration(milliseconds: 900),
       curve: Curves.bounceInOut,
       height: 50, // fixed height for horizontal chips
       child: ListView.separated(
