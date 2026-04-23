@@ -28,7 +28,7 @@ class CustomHomeSearchBar extends StatelessWidget {
               filled: true,
               fillColor: const Color(0xFF2A2A2A),
               prefixIcon: const Icon(
-                Iconsax.search_normal,
+                Iconsax.search_normal_1,
                 color: Colors.white,
               ),
             ),

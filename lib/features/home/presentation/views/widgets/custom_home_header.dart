@@ -2,6 +2,7 @@ import 'package:coffee_shop_app/core/utils/assets.dart';
 import 'package:coffee_shop_app/core/utils/colors.dart';
 import 'package:coffee_shop_app/core/utils/styles.dart';
 import 'package:coffee_shop_app/features/home/presentation/views/widgets/custom_home_search_bar.dart';
+import 'package:coffee_shop_app/features/home/presentation/views/widgets/promo_card.dart';
 import 'package:flutter/material.dart';
 
 class CustomHomeHeader extends StatelessWidget {
@@ -10,11 +11,12 @@ class CustomHomeHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
+      clipBehavior: Clip.none,
       children: [
         SizedBox(
           height: 280,
           width: double.infinity,
-          child: Image.asset(Assets.imagesWhitedBlackBg, fit: BoxFit.fill),
+          child: Image.asset(Assets.imagesWhitedBlackBg, fit: BoxFit.cover),
         ),
         Positioned(
           top: 68,
@@ -31,8 +33,8 @@ class CustomHomeHeader extends StatelessWidget {
             children: [
               Text(
                 "Bilzen, Tanjungbalai",
-                style: AppStyles.regular12.copyWith(
-                  color: ColorsData.kFontThird,
+                style: AppStyles.regular14.copyWith(
+                  color: const Color(0xFFD8D8D8),
                 ),
               ),
               const SizedBox(width: 4),
@@ -49,6 +51,12 @@ class CustomHomeHeader extends StatelessWidget {
           left: 24,
           right: 24, // ← Add this
           child: CustomHomeSearchBar(),
+        ),
+        const Positioned(
+          left: 24,
+          right: 24,
+          top: 44 + 167,
+          child: PromoCard(),
         ),
       ],
     );
