@@ -16,8 +16,9 @@ class OnBoardingViewBody extends StatelessWidget {
         SizedBox(
           height: double.infinity,
           width: double.infinity,
-          child: Positioned.fill(
-            child: Image.asset(Assets.imagesOnBoardingBackgroundImage),
+          child: Image.asset(
+            Assets.imagesOnBoardingBackgroundImage,
+            fit: BoxFit.fill,
           ),
         ),
         Positioned(
