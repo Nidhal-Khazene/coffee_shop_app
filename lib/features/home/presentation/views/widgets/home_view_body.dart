@@ -1,4 +1,4 @@
-import 'package:coffee_shop_app/features/home/presentation/views/widgets/custom_home_app_bar.dart';
+import 'package:coffee_shop_app/features/home/presentation/views/widgets/custom_home_header.dart';
 import 'package:flutter/material.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -7,7 +7,7 @@ class HomeViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const SingleChildScrollView(
-      child: Column(children: [CustomHomeAppBar()]),
+      child: Column(children: [CustomHomeHeader()]),
     );
   }
 }

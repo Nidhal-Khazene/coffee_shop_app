@@ -16,6 +16,8 @@ class Assets {
 
   static const String imagesHelperCoffeePackageIcon = "assets/images/helper/coffee_package_icon.svg";
 
+  static const String imagesHelperFilterIcon = "assets/images/helper/filter_icon.svg";
+
   static const String imagesHelperMotorBikeIcon = "assets/images/helper/motor_bike_icon.svg";
 
   static const String imagesHomeBannerPromo = "assets/images/home_banner_promo.png";
