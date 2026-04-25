@@ -1,4 +1,5 @@
 import 'package:coffee_shop_app/core/utils/styles.dart';
+import 'package:coffee_shop_app/features/home/presentation/views/coffee_details_view.dart';
 import 'package:coffee_shop_app/features/home/presentation/views/widgets/coffee_item_image.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
@@ -29,7 +30,12 @@ class CoffeeItem extends StatelessWidget {
 
           return Stack(
             children: [
-              CoffeeItemImage(image: image),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, CoffeeDetailsView.routeName);
+                },
+                child: CoffeeItemImage(image: image),
+              ),
               Positioned(
                 top: imageHeight + 8,
                 child: Text(name, style: AppStyles.semiBold16),

@@ -1,3 +1,4 @@
+import 'package:coffee_shop_app/features/home/presentation/views/coffee_details_view.dart';
 import 'package:coffee_shop_app/shared/widgets/custom_bottom_navigation_bar.dart';
 import 'package:coffee_shop_app/features/home/presentation/views/home_view.dart';
 import 'package:coffee_shop_app/features/on_boarding/presentation/views/on_boarding_view.dart';
@@ -14,6 +15,8 @@ Route<dynamic> onGenerateRoutes(RouteSettings settings) {
       return MaterialPageRoute(
         builder: (context) => const CustomBottomNavigationBar(),
       );
+    case CoffeeDetailsView.routeName:
+      return MaterialPageRoute(builder: (context) => const CoffeeDetailsView());
 
     default:
       return MaterialPageRoute(builder: (context) => const OnBoardingView());
