@@ -1,24 +1,24 @@
-import 'package:coffee_shop_app/core/utils/assets.dart';
 import 'package:coffee_shop_app/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 
 class CoffeeItemImage extends StatelessWidget {
-  const CoffeeItemImage({super.key});
-
+  const CoffeeItemImage({super.key, required this.image});
+  final String image;
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Container(
-          height: 128,
-          width: 140,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: Image.asset(Assets.imagesCoffee1).image,
-              fit: BoxFit.fill,
+        AspectRatio(
+          aspectRatio: 140 / 128,
+          child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: Image.asset(image).image,
+                fit: BoxFit.fill,
+              ),
+              borderRadius: BorderRadius.circular(16),
             ),
-            borderRadius: BorderRadius.circular(16),
           ),
         ),
         Positioned(
@@ -43,8 +43,12 @@ class CoffeeItemImage extends StatelessWidget {
             child: Center(
               child: Row(
                 children: [
-                  Icon(IconlyBold.star, color: Colors.amber, size: 12),
-                  SizedBox(width: 4),
+                  const Icon(
+                    IconlyBold.star,
+                    color: Color(0xFFFABD21),
+                    size: 12,
+                  ),
+                  const SizedBox(width: 4),
                   Text(
                     "4.8",
                     style: AppStyles.semiBold8.copyWith(color: Colors.white),

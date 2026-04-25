@@ -1,6 +1,6 @@
 import 'package:coffee_shop_app/core/constants/constants.dart';
 import 'package:coffee_shop_app/features/home/presentation/views/widgets/category_chips.dart';
-import 'package:coffee_shop_app/features/home/presentation/views/widgets/coffee_item.dart';
+import 'package:coffee_shop_app/features/home/presentation/views/widgets/coffee_grid_view.dart';
 import 'package:coffee_shop_app/features/home/presentation/views/widgets/custom_home_header.dart';
 import 'package:flutter/material.dart';
 
@@ -22,9 +22,12 @@ class HomeViewBody extends StatelessWidget {
             delegate: SliverChildListDelegate([
               const CategoryChips(),
               const SizedBox(height: 16),
-              const CoffeeItem(),
             ]),
           ),
+        ),
+        SliverPadding(
+          padding: const EdgeInsets.symmetric(horizontal: kHorizontallPadding),
+          sliver: const CoffeeGridView(),
         ),
       ],
     );
