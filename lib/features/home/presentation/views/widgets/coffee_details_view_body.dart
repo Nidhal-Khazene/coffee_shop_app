@@ -1,6 +1,10 @@
+import 'package:coffee_shop_app/core/constants/constants.dart';
+import 'package:coffee_shop_app/core/utils/styles.dart';
 import 'package:coffee_shop_app/features/home/presentation/views/widgets/coffee_details_custom_app_bar.dart';
+import 'package:coffee_shop_app/features/home/presentation/views/widgets/coffee_details_description.dart';
 import 'package:coffee_shop_app/features/home/presentation/views/widgets/coffee_details_view_image.dart';
 import 'package:coffee_shop_app/features/home/presentation/views/widgets/coffee_details_view_information.dart';
+import 'package:coffee_shop_app/features/home/presentation/views/widgets/size_selector.dart';
 import 'package:flutter/material.dart';
 
 class CoffeeDetailsViewBody extends StatelessWidget {
@@ -8,14 +12,24 @@ class CoffeeDetailsViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SingleChildScrollView(
+    return SingleChildScrollView(
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          CoffeeDetailsCustomAppBar(),
-          SizedBox(height: 24),
-          CoffeeDetailsViewImage(),
-          SizedBox(height: 16),
-          CoffeeDetailsViewInformation(),
+          const CoffeeDetailsCustomAppBar(),
+          const SizedBox(height: 24),
+          const CoffeeDetailsViewImage(),
+          const SizedBox(height: 16),
+          const CoffeeDetailsViewInformation(),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: kHorizontallPadding),
+            child: Divider(color: Color(0xFFE3E3E3), height: 32, thickness: 1),
+          ),
+          const CoffeeDetailsDescription(),
+          const SizedBox(height: 24),
+          Text('Size', style: AppStyles.semiBold16),
+          const SizedBox(height: 16),
+          const SizeSelector(),
         ],
       ),
     );
