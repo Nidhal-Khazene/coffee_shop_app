@@ -14,22 +14,35 @@ class CoffeeDetailsViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const CoffeeDetailsCustomAppBar(),
-          const SizedBox(height: 24),
-          const CoffeeDetailsViewImage(),
-          const SizedBox(height: 16),
-          const CoffeeDetailsViewInformation(),
-          const Padding(
-            padding: EdgeInsets.symmetric(horizontal: kHorizontallPadding),
-            child: Divider(color: Color(0xFFE3E3E3), height: 32, thickness: 1),
+          Padding(
+            padding: kPrimaryPadding,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const CoffeeDetailsCustomAppBar(),
+                const SizedBox(height: 24),
+                const CoffeeDetailsViewImage(),
+                const SizedBox(height: 16),
+                const CoffeeDetailsViewInformation(),
+                const Padding(
+                  padding: EdgeInsets.symmetric(
+                    horizontal: kHorizontallPadding,
+                  ),
+                  child: Divider(
+                    color: Color(0xFFE3E3E3),
+                    height: 32,
+                    thickness: 1,
+                  ),
+                ),
+                const CoffeeDetailsDescription(),
+                const SizedBox(height: 24),
+                Text('Size', style: AppStyles.semiBold16),
+                const SizedBox(height: 16),
+                const SizeSelector(),
+              ],
+            ),
           ),
-          const CoffeeDetailsDescription(),
-          const SizedBox(height: 24),
-          Text('Size', style: AppStyles.semiBold16),
-          const SizedBox(height: 16),
-          const SizeSelector(),
         ],
       ),
     );

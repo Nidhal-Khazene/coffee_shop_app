@@ -1,5 +1,5 @@
-import 'package:coffee_shop_app/core/constants/constants.dart';
 import 'package:coffee_shop_app/features/home/presentation/views/widgets/coffee_details_view_body.dart';
+import 'package:coffee_shop_app/features/home/presentation/views/widgets/coffee_purchase.dart';
 import 'package:flutter/material.dart';
 
 class CoffeeDetailsView extends StatelessWidget {
@@ -8,12 +8,8 @@ class CoffeeDetailsView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: SafeArea(
-        child: Padding(
-          padding: kPrimaryPadding,
-          child: CoffeeDetailsViewBody(),
-        ),
-      ),
+      bottomNavigationBar: CoffeePurchase(),
+      body: SafeArea(child: CoffeeDetailsViewBody()),
     );
   }
 }
