@@ -1,5 +1,6 @@
 import 'package:coffee_shop_app/core/utils/colors.dart';
 import 'package:coffee_shop_app/core/utils/styles.dart';
+import 'package:coffee_shop_app/features/order/presentation/views/order_view.dart';
 import 'package:coffee_shop_app/shared/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 
@@ -49,7 +50,9 @@ class CoffeePurchase extends StatelessWidget {
           ),
           const Spacer(),
           CustomButton(
-            onTap: () {},
+            onTap: () {
+              Navigator.pushNamed(context, OrderView.routeName);
+            },
             content: 'Buy Now',
             width: 217,
             height: 56,
