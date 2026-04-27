@@ -35,14 +35,12 @@ class _SizeSelectorState extends State<SizeSelector> {
                   vertical: 12,
                 ),
                 decoration: BoxDecoration(
-                  color: isSelected
-                      ? Colors.orange.shade50
-                      : Colors.grey.shade200,
+                  color: isSelected ? const Color(0xFFF9F2ED) : Colors.white,
                   borderRadius: BorderRadius.circular(12),
                   border: Border.all(
                     color: isSelected
                         ? ColorsData.kPrimary
-                        : Colors.transparent,
+                        : Colors.grey.shade200,
                     width: 1.5,
                   ),
                 ),
