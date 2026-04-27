@@ -1,5 +1,6 @@
 import 'package:coffee_shop_app/core/utils/colors.dart';
 import 'package:coffee_shop_app/core/utils/styles.dart';
+import 'package:coffee_shop_app/shared/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 
 class CoffeePurchase extends StatelessWidget {
@@ -47,27 +48,11 @@ class CoffeePurchase extends StatelessWidget {
             ],
           ),
           const Spacer(),
-          Container(
+          CustomButton(
+            onTap: () {},
+            content: 'Buy Now',
             width: 217,
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-            decoration: ShapeDecoration(
-              color: const Color(0xFFC67C4E),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(16),
-              ),
-            ),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              spacing: 10,
-              children: [
-                Text(
-                  'Buy Now',
-                  style: AppStyles.semiBold16.copyWith(color: Colors.white),
-                ),
-              ],
-            ),
+            height: 56,
           ),
         ],
       ),
