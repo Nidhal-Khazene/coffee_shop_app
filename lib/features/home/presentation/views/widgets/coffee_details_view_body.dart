@@ -5,6 +5,7 @@ import 'package:coffee_shop_app/features/home/presentation/views/widgets/coffee_
 import 'package:coffee_shop_app/features/home/presentation/views/widgets/coffee_details_view_image.dart';
 import 'package:coffee_shop_app/features/home/presentation/views/widgets/coffee_details_view_information.dart';
 import 'package:coffee_shop_app/features/home/presentation/views/widgets/size_selector.dart';
+import 'package:coffee_shop_app/shared/widgets/custom_divider.dart';
 import 'package:flutter/material.dart';
 
 class CoffeeDetailsViewBody extends StatelessWidget {
@@ -25,16 +26,7 @@ class CoffeeDetailsViewBody extends StatelessWidget {
                 const CoffeeDetailsViewImage(),
                 const SizedBox(height: 16),
                 const CoffeeDetailsViewInformation(),
-                const Padding(
-                  padding: EdgeInsets.symmetric(
-                    horizontal: kHorizontallPadding,
-                  ),
-                  child: Divider(
-                    color: Color(0xFFE3E3E3),
-                    height: 32,
-                    thickness: 1,
-                  ),
-                ),
+                const CustomDivider(),
                 const CoffeeDetailsDescription(),
                 const SizedBox(height: 24),
                 Text('Size', style: AppStyles.semiBold16),
