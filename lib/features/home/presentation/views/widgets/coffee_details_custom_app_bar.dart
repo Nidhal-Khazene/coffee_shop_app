@@ -2,9 +2,16 @@ import 'package:coffee_shop_app/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 
-class CoffeeDetailsCustomAppBar extends StatelessWidget {
+class CoffeeDetailsCustomAppBar extends StatefulWidget {
   const CoffeeDetailsCustomAppBar({super.key});
 
+  @override
+  State<CoffeeDetailsCustomAppBar> createState() =>
+      _CoffeeDetailsCustomAppBarState();
+}
+
+class _CoffeeDetailsCustomAppBarState extends State<CoffeeDetailsCustomAppBar> {
+  bool isSelected = false;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -17,7 +24,16 @@ class CoffeeDetailsCustomAppBar extends StatelessWidget {
           child: const Icon(Icons.arrow_back_ios_new_outlined, size: 24),
         ),
         Text("Detail", style: AppStyles.semiBold16),
-        const Icon(IconlyLight.heart, size: 24),
+        GestureDetector(
+          onTap: () {
+            setState(() {
+              isSelected = !isSelected;
+            });
+          },
+          child: isSelected
+              ? const Icon(IconlyBold.heart, size: 24, color: Colors.red)
+              : const Icon(IconlyLight.heart, size: 24),
+        ),
       ],
     );
   }
