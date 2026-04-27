@@ -6,6 +6,6 @@ class OrderView extends StatelessWidget {
   static const routeName = " order_view";
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: OrderViewBody());
+    return const Scaffold(body: SafeArea(child: OrderViewBody()));
   }
 }
