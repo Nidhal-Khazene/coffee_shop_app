@@ -2,15 +2,14 @@ import 'package:coffee_shop_app/core/utils/assets.dart';
 import 'package:coffee_shop_app/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 
-class CoffeeIncrementDecrement extends StatefulWidget {
-  const CoffeeIncrementDecrement({super.key});
+class CartIncrementDecrement extends StatefulWidget {
+  const CartIncrementDecrement({super.key});
 
   @override
-  State<CoffeeIncrementDecrement> createState() =>
-      _CoffeeIncrementDecrementState();
+  State<CartIncrementDecrement> createState() => _CartIncrementDecrementState();
 }
 
-class _CoffeeIncrementDecrementState extends State<CoffeeIncrementDecrement> {
+class _CartIncrementDecrementState extends State<CartIncrementDecrement> {
   int quantity = 1;
 
   void increment() {
