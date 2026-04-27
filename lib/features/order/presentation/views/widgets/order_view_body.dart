@@ -1,5 +1,6 @@
 import 'package:coffee_shop_app/core/constants/constants.dart';
 import 'package:coffee_shop_app/features/order/presentation/views/widgets/order_discount.dart';
+import 'package:coffee_shop_app/features/order/presentation/views/widgets/order_payment_summary.dart';
 import 'package:coffee_shop_app/shared/widgets/cart_increment_decrement.dart';
 import 'package:coffee_shop_app/features/order/presentation/views/widgets/order_delivery_address.dart';
 import 'package:coffee_shop_app/features/order/presentation/views/widgets/order_switch_deliver_pick_up.dart';
@@ -29,16 +30,22 @@ class OrderViewBody extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
           Container(
             width: double.infinity,
             height: 4,
             decoration: const BoxDecoration(color: Color(0xFFF9F2ED)),
           ),
-          SizedBox(height: 16),
-          Padding(
+          const SizedBox(height: 16),
+          const Padding(
             padding: EdgeInsets.symmetric(horizontal: kHorizontallPadding),
-            child: Column(children: [OrderDiscount()]),
+            child: Column(
+              children: [
+                OrderDiscount(),
+                SizedBox(height: 24),
+                OrderPaymentSummary(),
+              ],
+            ),
           ),
         ],
       ),
