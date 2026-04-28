@@ -22,6 +22,8 @@ class Assets {
 
   static const String imagesHomeBannerPromo = "assets/images/home_banner_promo.png";
 
+  static const String imagesMapWithDeliverLocation = "assets/images/map_with_deliver_location.png";
+
   static const String imagesOnBoardingBackgroundImage = "assets/images/on_boarding_background_image.png";
 
   static const String imagesPerson = "assets/images/person.png";

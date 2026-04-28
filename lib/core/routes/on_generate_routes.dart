@@ -1,3 +1,4 @@
+import 'package:coffee_shop_app/features/delivery/presentation/views/delivery_view.dart';
 import 'package:coffee_shop_app/features/home/presentation/views/coffee_details_view.dart';
 import 'package:coffee_shop_app/features/order/presentation/views/order_view.dart';
 import 'package:coffee_shop_app/shared/widgets/custom_bottom_navigation_bar.dart';
@@ -20,6 +21,8 @@ Route<dynamic> onGenerateRoutes(RouteSettings settings) {
       return MaterialPageRoute(builder: (context) => const CoffeeDetailsView());
     case OrderView.routeName:
       return MaterialPageRoute(builder: (context) => const OrderView());
+    case DeliveryView.routeName:
+      return MaterialPageRoute(builder: (context) => const DeliveryView());
 
     default:
       return MaterialPageRoute(builder: (context) => const OnBoardingView());
