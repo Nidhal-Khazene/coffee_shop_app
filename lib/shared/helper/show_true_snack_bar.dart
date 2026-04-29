@@ -1,5 +1,6 @@
 import 'package:coffee_shop_app/core/constants/constants.dart';
 import 'package:coffee_shop_app/core/utils/assets.dart';
+import 'package:coffee_shop_app/core/utils/colors.dart';
 import 'package:coffee_shop_app/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -15,9 +16,12 @@ void showTrueSnackBar(
       backgroundColor: Colors.white,
       content: Row(
         children: [
-          SvgPicture.asset(Assets.imagesHelperTrueIcon),
+          SvgPicture.asset(Assets.imagesHelperTrueCircleContainer),
           const SizedBox(width: 12),
-          Text(message, style: AppStyles.regular14),
+          Text(
+            message,
+            style: AppStyles.regular14.copyWith(color: ColorsData.kFontPrimary),
+          ),
         ],
       ),
       behavior: SnackBarBehavior.floating,

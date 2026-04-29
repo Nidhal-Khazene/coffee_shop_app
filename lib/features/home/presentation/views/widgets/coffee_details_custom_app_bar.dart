@@ -1,4 +1,5 @@
 import 'package:coffee_shop_app/core/utils/styles.dart';
+import 'package:coffee_shop_app/shared/helper/show_true_snack_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 import 'package:iconsax/iconsax.dart';
@@ -30,6 +31,11 @@ class _CoffeeDetailsCustomAppBarState extends State<CoffeeDetailsCustomAppBar> {
             setState(() {
               isSelected = !isSelected;
             });
+            if (isSelected) {
+              showTrueSnackBar(context, message: "Add to favorites");
+            } else {
+              showTrueSnackBar(context, message: "Remove from favorites");
+            }
           },
           child: isSelected
               ? const Icon(IconlyBold.heart, size: 24, color: Colors.red)

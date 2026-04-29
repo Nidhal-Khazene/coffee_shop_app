@@ -22,7 +22,7 @@ class Assets {
 
   static const String imagesHelperPackageIcon = "assets/images/helper/package_icon.png";
 
-  static const String imagesHelperTrueIcon = "assets/images/helper/true_icon.png";
+  static const String imagesHelperTrueCircleContainer = "assets/images/helper/true_circle_container.svg";
 
   static const String imagesHomeBannerPromo = "assets/images/home_banner_promo.png";
 
