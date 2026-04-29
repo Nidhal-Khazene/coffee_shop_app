@@ -50,12 +50,10 @@ filename: assets.dart
 
 ## 📸 Screenshots
 
-| | |
-|:-:|:-:|
-| <img src="assets/previews/1.png" width="220"/> | <img src="assets/previews/2.png" width="220"/> |
-| <img src="assets/previews/3.png" width="220"/> | <img src="assets/previews/4.png" width="220"/> |
-| <img src="assets/previews/5.png" width="220"/> |  |
-
+| | | |
+|:-:|:-:|:-:|
+| <img src="assets/previews/1.png" width="220"/> | <img src="assets/previews/2.png" width="220"/> | <img src="assets/previews/3.png" width="220"/> |
+| <img src="assets/previews/4.png" width="220"/> | <img src="assets/previews/5.png" width="220"/> |  |
 ## 🎨 Design
 
 You can view the UI/UX design here:  
