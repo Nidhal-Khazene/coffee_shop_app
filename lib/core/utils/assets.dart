@@ -16,9 +16,13 @@ class Assets {
 
   static const String imagesHelperDeliveryIcon = "assets/images/helper/delivery_icon.png";
 
+  static const String imagesHelperFalseIcon = "assets/images/helper/false_icon.svg";
+
   static const String imagesHelperFilterIcon = "assets/images/helper/filter_icon.svg";
 
   static const String imagesHelperPackageIcon = "assets/images/helper/package_icon.png";
+
+  static const String imagesHelperTrueIcon = "assets/images/helper/true_icon.png";
 
   static const String imagesHomeBannerPromo = "assets/images/home_banner_promo.png";
 
