@@ -7,6 +7,21 @@
 
 A sleek and modern coffee shop application developed using the Flutter framework to deliver a high-performance, cross-platform experience. This app allows users to browse a curated selection of beverages and manage their orders through an intuitive and visually appealing interface. Built with a focus on stability and code quality, the project incorporates robust testing features to ensure a seamless and bug-free user journey from beans to cup.
 
+![Preview](assets/previews/preview_1.png)
+
+## 📸 Screenshots
+
+| | | |
+|:-:|:-:|:-:|
+| <img src="assets/previews/1.png" width="220"/> | <img src="assets/previews/2.png" width="220"/> | <img src="assets/previews/3.png" width="220"/> |
+| <img src="assets/previews/4.png" width="220"/> | <img src="assets/previews/5.png" width="220"/> |  |
+
+## 🎨 Design
+
+You can view the UI/UX design here:  
+[Figma Design File](https://www.figma.com/community/file/1116708627748807811)
+
+
 ## ✨ Features
 
 - Home
@@ -48,16 +63,6 @@ output_path: lib/core/utils/
 filename: assets.dart
 ```
 
-## 📸 Screenshots
-
-| | | |
-|:-:|:-:|:-:|
-| <img src="assets/previews/1.png" width="220"/> | <img src="assets/previews/2.png" width="220"/> | <img src="assets/previews/3.png" width="220"/> |
-| <img src="assets/previews/4.png" width="220"/> | <img src="assets/previews/5.png" width="220"/> |  |
-## 🎨 Design
-
-You can view the UI/UX design here:  
-[Figma Design File](https://www.figma.com/community/file/1116708627748807811)
 
 ## 📁 Project Structure
 
