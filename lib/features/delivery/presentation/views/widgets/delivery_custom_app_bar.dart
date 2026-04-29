@@ -7,11 +7,16 @@ class DeliveryCustomAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        CustomIconContainer(child: Icon(Iconsax.arrow_left_2)),
-        CustomIconContainer(child: Icon(Iconsax.gps)),
+        CustomIconContainer(
+          onTap: () {
+            Navigator.pop(context);
+          },
+          child: const Icon(Iconsax.arrow_left_2),
+        ),
+        const CustomIconContainer(child: Icon(Iconsax.gps)),
       ],
     );
   }

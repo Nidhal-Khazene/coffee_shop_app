@@ -5,6 +5,10 @@ abstract class AppStyles {
     fontSize: 14,
     fontWeight: FontWeight.w300,
   );
+  static final TextStyle light12 = const TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.w300,
+  );
   static final TextStyle regular14 = const TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.w400,
