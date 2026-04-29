@@ -2,19 +2,6 @@
 
 ![GitHub stars](https://img.shields.io/github/stars/Nidhal-Khazene/coffee_shop_app?style=for-the-badge&logo=github) ![GitHub forks](https://img.shields.io/github/forks/Nidhal-Khazene/coffee_shop_app?style=for-the-badge&logo=github) ![GitHub issues](https://img.shields.io/github/issues/Nidhal-Khazene/coffee_shop_app?style=for-the-badge&logo=github) ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white) ![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
 
-## 📑 Table of Contents
-
-- [Description](#description)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Quick Start](#quick-start)
-- [Key Dependencies](#key-dependencies)
-- [Screenshots](#screenshots)
-- [Design](#design)
-- [Project Structure](#project-structure)
-- [Development Setup](#development-setup)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## 📝 Description
 
