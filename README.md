@@ -1,8 +1,11 @@
 # coffee_shop_app
 
 ![GitHub stars](https://img.shields.io/github/stars/Nidhal-Khazene/coffee_shop_app?style=for-the-badge&logo=github) ![GitHub forks](https://img.shields.io/github/forks/Nidhal-Khazene/coffee_shop_app?style=for-the-badge&logo=github) ![GitHub issues](https://img.shields.io/github/issues/Nidhal-Khazene/coffee_shop_app?style=for-the-badge&logo=github) ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white) ![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge) 
-![Youtube](https://img.shields.io/badge/Youtube-02569B?style=for-the-badge&logo=youtube&logoColor=red) 
-[Video Preview Here](https://www.youtube.com/watch?v=91buSVs78tA)
+![Youtube](https://img.shields.io/badge/Youtube-02569B?style=for-the-badge&logo=youtube&logoColor=red)
+
+### 📹 Video Preview
+
+[Link](https://www.youtube.com/watch?v=91buSVs78tA)
 
 
 ## 📝 Description
