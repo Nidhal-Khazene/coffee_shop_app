@@ -24,11 +24,11 @@ class DeliveryViewBody extends StatelessWidget {
           right: 24,
           child: DeliveryCustomAppBar(),
         ),
-        Positioned(
+        const Positioned(
           bottom: 0,
           left: 0,
           right: 0,
-          child: const DriverDetailBottomView(),
+          child: DriverDetailBottomView(),
         ),
       ],
     );

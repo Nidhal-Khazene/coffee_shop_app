@@ -70,11 +70,7 @@ class CoffeeDetailsViewInformation extends StatelessWidget {
         ),
         Row(
           children: [
-            const Icon(
-              IconlyBold.star,
-              size: 20,
-              color: const Color(0xFFFABD21),
-            ),
+            const Icon(IconlyBold.star, size: 20, color: Color(0xFFFABD21)),
             const SizedBox(width: 4),
             Text.rich(
               TextSpan(

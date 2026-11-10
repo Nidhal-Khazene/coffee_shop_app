@@ -25,9 +25,9 @@ class HomeViewBody extends StatelessWidget {
             ]),
           ),
         ),
-        SliverPadding(
-          padding: const EdgeInsets.symmetric(horizontal: kHorizontallPadding),
-          sliver: const CoffeeGridView(),
+        const SliverPadding(
+          padding: EdgeInsets.symmetric(horizontal: kHorizontallPadding),
+          sliver: CoffeeGridView(),
         ),
       ],
     );
